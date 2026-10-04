@@ -1,35 +1,25 @@
 # Weilin Wang — Personal Homepage
 
-Static personal homepage for https://zhongshan-lang.github.io/.
-No package installation or build step is needed.
+Static personal homepage: https://zhongshan-lang.github.io/
 
-## Editing
+White background, blue links and compact text sections. No build step,
+package installation or JavaScript is required.
 
-- `index.html`: navigation, biography, project descriptions and links.
-- `style.css`: colors, fonts, spacing and mobile layouts. Global colors are at the top.
-- `script.js`: optional project filtering; the site works without JavaScript.
-- `assets/`: images, favicon and future documents.
+## Edit the site
 
-Open `index.html` locally to preview, or run `python -m http.server 8000` from this directory.
-GitHub Pages serves these files from the main branch's root.
+- `index.html`: introduction, projects, interests, background and links.
+- `style.css`: layout, typography and responsive styles.
+- `assets/`: favicon, future screenshots and reviewed CV PDF.
 
-## Adding a project
+Each project is an `<article class="project">` block. Copy one to add a
+project and update its title, description, technologies and notes.
+Native `<details>` elements provide expandable notes without JavaScript.
 
-Copy an `<article class="project">` block inside `.project-grid`. Use
-`data-category="web"`, `"3d"` or `"ar"` for filtering. Update the title,
-description, tags and notes. If a project has no public demo, omit its demo
-link rather than using an empty link.
+The project indices are neutral text markers rather than artificial
+screenshots. Replace a `.project-index` block with an actual image when
+available; give it meaningful alt text and constrain it to the column width.
 
-The current project covers are schematic illustrations, not screenshots.
-To add a screenshot, replace the contents of `.project-visual` with an
-`<img src="assets/example.webp" alt="Describe the project screenshot">`,
-remove `aria-hidden`, and style the image to cover the available space.
+Add a verified email and reviewed CV link in the contact section when ready.
+The live demo for Singapore MRT uses the supplied Vercel address.
 
-## Items still to provide
-
-- A portrait, if desired.
-- Confirmed contact email, then add a `mailto:` link to the contact section.
-- Reviewed CV PDF. Add it to `assets/`, then add a link to that file.
-- Screenshots or videos for each project.
-
-No email address, publications, awards or completed research have been invented.
+Open index.html locally to preview. GitHub Pages serves the main branch root.
