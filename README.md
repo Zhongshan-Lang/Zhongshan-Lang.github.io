@@ -2,7 +2,7 @@
 
 Static personal homepage: https://zhongshan-lang.github.io/
 
-White background, blue links and compact text sections. No build step,
+White background, underlined blue links, a personal-information sidebar and a main content column. No build step,
 package installation or JavaScript is required.
 
 ## Edit the site
@@ -13,6 +13,8 @@ package installation or JavaScript is required.
 
 Each project is an `<article class="project">` block. Copy one to add a
 project and update its title, description, technologies and notes.
+The sidebar uses a neutral initials placeholder until a portrait is supplied.
+
 Native `<details>` elements provide expandable notes without JavaScript.
 
 The project indices are neutral text markers rather than artificial
